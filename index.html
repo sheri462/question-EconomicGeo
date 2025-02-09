@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Germany Economy & Geopolitics Questionnaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Germany Economy & Geopolitics Questionnaire</h2>
+    <form action="#" method="post">
+        
+        <!-- Personal Information Section -->
+        <div class="section">
+            <h3>Personal Information</h3>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+        </div>
+
+        <!-- General Overview -->
+        <div class="section">
+            <h3>General Overview</h3>
+            <label>How knowledgeable are you about Germany’s economy?</label><br>
+            <select name="germany_knowledge">
+                <option value="basic">Basic</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select><br><br>
+        </div>
+        
+        <!-- German Economy -->
+        <div class="section">
+            <h3>About Germany’s Economy</h3>
+            <label>What are the biggest challenges Germany’s economy faces?</label><br>
+            <textarea name="germany_problems" rows="4" cols="50"></textarea><br><br>
+        </div>
+        
+        <!-- Geopolitical Situation -->
+        <div class="section">
+            <h3>Geopolitical Situation</h3>
+            <label>How do you think global political changes affect Germany?</label><br>
+            <textarea name="geopolitical_impact" rows="4" cols="50"></textarea><br><br>
+
+            <label>How significant is the US-China trade war to Germany?</label><br>
+            <input type="radio" name="us_china" value="Very Significant"> Very Significant<br>
+            <input type="radio" name="us_china" value="Somewhat Significant"> Somewhat Significant<br>
+            <input type="radio" name="us_china" value="Not Significant"> Not Significant<br><br>
+        </div>
+        
+        <!-- Industry Hurdles -->
+        <div class="section">
+            <h3>Industry Hurdles</h3>
+            <label>Which industry faces the biggest hurdles in Germany?</label><br>
+            <select name="industry_hurdles">
+                <option value="automotive">Automotive</option>
+                <option value="manufacturing">Manufacturing</option>
+                <option value="pharmaceutical">Pharmaceutical</option>
+                <option value="steel">Steel Industry</option>
+            </select><br><br>
+        </div>
+        
+        <!-- Innovation Strategies -->
+        <div class="section">
+            <h3>Innovative Approaches</h3>
+            <label>What strategies should Germany focus on?</label><br>
+            <input type="checkbox" name="strategy" value="stability"> Stability<br>
+            <input type="checkbox" name="strategy" value="conflicts"> Conflict Resolution<br>
+            <input type="checkbox" name="strategy" value="unity"> Unity in the EU<br>
+            <input type="checkbox" name="strategy" value="diversification"> Trade & Energy Diversification<br><br>
+        </div>
+
+        <!-- Summary -->
+        <div class="section">
+            <h3>Final Thoughts</h3>
+            <label>Do you see a positive future for Germany’s economy?</label><br>
+            <input type="radio" name="future_outlook" value="yes"> Yes<br>
+            <input type="radio" name="future_outlook" value="no"> No<br>
+            <input type="radio" name="future_outlook" value="uncertain"> Uncertain<br><br>
+        </div>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
